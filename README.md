@@ -14,7 +14,9 @@ Image classifier program that determines whether you are drawing a Pizza or a Ca
 </div>
 
 ## Info
-This was created using a multitude of resources. In order to train the model Google QuickDraw's dataset was used; a dataset that offers millions of drawings of many different objects. The model used to classify the drawings was scikitlearn's ```RandomForestClassifier```. Each class was trained with 5000 different images which feature drawings of pizza and cats. The model was tested on 2500 images and showed to be 92% accurate.
+This was created using a multitude of resources. In order to train the model Google QuickDraw's dataset was used; a dataset that offers millions of drawings of many different objects. The model used to classify the drawings was scikitlearn's ```RandomForestClassifier```. To bridge the web interface with the python backend the Flask library was used.
+
+Each class was trained with 5000 different images which feature drawings of pizza and cats. The model was tested on 2500 images and showed to be 92% accurate.
 
 In order to find the perfect model there many trials using many different models and the current model used proved to be the most successful.
 
