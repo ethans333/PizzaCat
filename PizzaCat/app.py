@@ -5,8 +5,6 @@ import base64
 from io import BytesIO
 import numpy as np
 
-print(io.__all__)
-
 model = pickle.load(open('./models/model_quickdraw.pkl', 'rb'))
 
 def clean_image(image):
