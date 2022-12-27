@@ -1,0 +1,91 @@
+<html>
+
+<head>
+    <title>👻</title>
+
+    <!-- Animate CSS -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+        canvas {
+            border: 2px solid rgb(255, 197, 138);
+            border-radius: 5px;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .horizontal-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title-left {
+            color: #fcba03;
+            font-size: 56px;
+        }
+
+        .title-right {
+            color: #fc7f03;
+            font-size: 56px;
+            padding-left: 5px;
+        }
+
+        #btn-clear {
+            margin-top: 15px;
+        }
+
+        .lbl-button {
+            color: rgb(252, 129, 28);
+            font-weight: bolder;
+        }
+
+        .lbl-button:hover {
+            cursor: pointer;
+            color: rgb(255, 78, 2);
+        }
+
+        
+
+    </style>
+</head>
+
+<body>
+
+    <center>
+
+        <div style="animation: fadeInDown; animation-duration: 1s;">
+            <div class="horizontal-container">
+                <h1 class="title-left">Pizza</h1>
+                <h1 class="title-right">Cat</h1>
+                <img class="title-right" src="{{url_for('static', filename='pizzacat-logo.png')}}" alt="pizzacat-logo" width="12%"></img>
+            </div>
+        </div>
+
+        <div style="animation: fadeInUp; animation-duration: 1s;">
+            <h1 id="lbl-prediction">ㅤ</h1>
+            <canvas id="canvas"></canvas>
+        
+            <br>
+    
+            <p class="lbl-button" id="btn-clear">Clear</p>
+        </div>
+    </center>
+
+
+
+    <script src="{{url_for('static', filename='canvas.js')}}"></script>
+    <script src="{{url_for('static', filename='post_data.js')}}"></script>
+</body>
+
+</html>
