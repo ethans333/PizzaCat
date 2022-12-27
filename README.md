@@ -9,8 +9,8 @@ Image classifier program that determines whether you are drawing a Pizza or a Ca
   justify-content: center;
   align-items: center;
 ">
-  <img src="pizza-test.PNG"></img>
-  <img src="cat-test.PNG"></img>
+  <img src="./images/pizza-test.PNG" width="40%"></img>
+  <img src="./images/cat-test.PNG" width="40%"></img>
 </div>
 
 ## Run It Yourself
